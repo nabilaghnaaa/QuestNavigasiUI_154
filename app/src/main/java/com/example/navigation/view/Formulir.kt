@@ -66,12 +66,12 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                 }
             }
 
-            HorizontalDivider(
+            HorizontalDivider( // Garis pembatas lagi
                 modifier = Modifier
-                    .padding(20.dp)
-                    .width(250.dp),
-                thickness = 1.dp,
-                color = Color.Red
+                    .padding(20.dp) // Padding sekitar garis
+                    .width(250.dp), // Lebar 250dp
+                thickness = 1.dp, // Ketebalan 1dp
+                color = Color.Red // Warna merah
             )
 
             OutlinedTextField(
