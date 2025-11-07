@@ -82,11 +82,11 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                 modifier = Modifier.width(250.dp) // Lebar 250dp
             )
 
-            Button(
-                onClick = OnSubmitBtnClick,
+            Button( // Tombol untuk submit
+                onClick = OnSubmitBtnClick, // Menjalankan fungsi callback saat diklik
                 modifier = Modifier
-                    .padding(top = 16.dp)
-                    .width(250.dp)
+                    .padding(top = 16.dp) // Jarak dari atas
+                    .width(250.dp) // Lebar tombol 250dp
             ) {
                 Text(text = stringResource(id = R.string.submit))
             }
