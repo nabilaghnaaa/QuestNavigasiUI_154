@@ -54,14 +54,14 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                 color = Color.Red // Warna garis merah
             )
 
-            Row {
-                jenisK.forEach { item ->
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        RadioButton(
-                            selected = false,
-                            onClick = {}
+            Row { // Layout horizontal untuk radio button
+                jenisK.forEach { item -> // Melakukan iterasi untuk setiap item di list jenisK
+                    Row(verticalAlignment = Alignment.CenterVertically) { // Menyusun radio button dan teks sejajar vertikal
+                        RadioButton( // Komponen radio button
+                            selected = false, // Tidak ada yang dipilih (default)
+                            onClick = {} // Aksi ketika diklik (belum diatur)
                         )
-                        Text(text = item)
+                        Text(text = item) // Menampilkan teks “Laki-laki” atau “Perempuan”
                     }
                 }
             }
