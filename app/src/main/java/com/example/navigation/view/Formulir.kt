@@ -74,12 +74,12 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                 color = Color.Red // Warna merah
             )
 
-            OutlinedTextField(
-                value = "",
-                onValueChange = {},
-                singleLine = true,
-                label = { Text("Alamat") },
-                modifier = Modifier.width(250.dp)
+            OutlinedTextField( // Input untuk alamat
+                value = "", // Nilai input kosong
+                onValueChange = {}, // Fungsi ketika teks berubah (belum diatur)
+                singleLine = true, // Satu baris
+                label = { Text("Alamat") }, // Label teks “Alamat”
+                modifier = Modifier.width(250.dp) // Lebar 250dp
             )
 
             Button(
