@@ -1,15 +1,15 @@
-package com.example.Navigation.view
+package com.example.Navigation.view // Mendefinisikan package tempat file ini berada
 
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.colorResource
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
-import com.example.navigation.R
+import androidx.compose.foundation.layout.* // Import untuk layout seperti Column, Row, padding, dll
+import androidx.compose.material3.* // Import untuk komponen Material 3 (Button, TextField, dsb)
+import androidx.compose.runtime.Composable // Import untuk menandai fungsi Compose
+import androidx.compose.ui.Alignment // Import untuk pengaturan alignment (posisi)
+import androidx.compose.ui.Modifier // Import untuk modifier (mengatur ukuran, padding, dsb)
+import androidx.compose.ui.graphics.Color // Import untuk warna
+import androidx.compose.ui.res.colorResource // Import untuk mengambil warna dari resource
+import androidx.compose.ui.res.stringResource // Import untuk mengambil string dari resource
+import androidx.compose.ui.unit.dp // Import untuk ukuran berbasis dp
+import com.example.navigation.R // Import resource dari folder res (misalnya warna, string, dll)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
