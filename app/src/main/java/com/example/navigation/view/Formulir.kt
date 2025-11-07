@@ -11,22 +11,23 @@ import androidx.compose.ui.res.stringResource // Import untuk mengambil string d
 import androidx.compose.ui.unit.dp // Import untuk ukuran berbasis dp
 import com.example.navigation.R // Import resource dari folder res (misalnya warna, string, dll)
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun FormIsian(
-    jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
-    OnSubmitBtnClick: () -> Unit
+@OptIn(ExperimentalMaterial3Api::class) // Mengizinkan penggunaan API eksperimental dari Material3
+@Composable // Menandakan bahwa ini adalah fungsi UI Jetpack Compose
+fun FormIsian( // Membuat fungsi composable bernama FormIsian
+    jenisK: List<String> = listOf("Laki-laki", "Perempuan"), // Parameter daftar jenis kelamin
+    OnSubmitBtnClick: () -> Unit // Parameter callback untuk tombol submit
 ) {
-    Scaffold(
-        modifier = Modifier,
-        topBar = {
-            TopAppBar(
-                title = { Text(text = stringResource(id = R.string.nama_lengkap), color = Color.White) },
-                colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = colorResource(id = R.color.teal_700)
+    Scaffold( // Struktur dasar halaman dengan TopBar dan konten utama
+        modifier = Modifier, // Modifier kosong (tidak ada perubahan)
+        topBar = { // Bagian untuk membuat TopBar
+            TopAppBar( // Membuat AppBar di bagian atas
+                title = { Text(text = stringResource(id = R.string.nama_lengkap), color = Color.White) }, // Judul di AppBar dengan warna putih
+                colors = TopAppBarDefaults.mediumTopAppBarColors( // Mengatur warna background AppBar
+                    containerColor = colorResource(id = R.color.teal_700) // Mengambil warna dari resource teal_700
                 )
             )
         }
+
     ) { isiRuang ->
         Column(
             modifier = Modifier
