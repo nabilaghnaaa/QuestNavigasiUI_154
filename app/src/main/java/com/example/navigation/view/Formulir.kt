@@ -88,7 +88,7 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                     .padding(top = 16.dp) // Jarak dari atas
                     .width(250.dp) // Lebar tombol 250dp
             ) {
-                Text(text = stringResource(id = R.string.submit))
+                Text(text = stringResource(id = R.string.submit)) //
             }
         }
     }
