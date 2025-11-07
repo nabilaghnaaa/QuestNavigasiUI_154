@@ -28,13 +28,13 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
             )
         }
 
-    ) { isiRuang ->
-        Column(
+    ) { isiRuang -> // isiRuang adalah padding otomatis dari Scaffold
+        Column( // Membuat layout vertikal
             modifier = Modifier
-                .padding(isiRuang)
-                .fillMaxSize(),
-            verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(isiRuang) // Memberikan padding sesuai Scaffold
+                .fillMaxSize(), // Mengisi seluruh layar
+            verticalArrangement = Arrangement.Top, // Mengatur posisi vertikal di atas
+            horizontalAlignment = Alignment.CenterHorizontally // Mengatur agar isi berada di tengah horizontal
         ) {
             OutlinedTextField(
                 value = "",
