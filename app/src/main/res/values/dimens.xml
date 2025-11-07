@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimens name="padding_small">10dp</dimens>
-    <dimens name="padding_medium">16dp</dimens>
-    <dimens name="padding_divider">1dp</dimens>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_divider">1dp</dimen>
 </resources>
