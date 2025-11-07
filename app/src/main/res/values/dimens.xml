@@ -1,10 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Navigation</string>
-    <string name="submit">Submit</string>
-    <string name="back">Back</string>
-    <string name="nama_lengkap">NAMA LENGKAP</string>
-    <string name="jenis_kelamin">JENIS KELAMIN</string>
-    <string name="alamat">ALAMAT</string>
-    <string name="tampil">Tampilan Data</string>
-    <string name="home">Form Isian</string>
+    <dimens name="padding_small">10dp</dimens>
+    <dimens name="padding_medium">16dp</dimens>
+    <dimens name="padding_divider">1dp</dimens>
 </resources>
