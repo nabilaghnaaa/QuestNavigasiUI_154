@@ -58,7 +58,7 @@ fun FormIsian(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         RadioButton(
                             selected = false,
-                            onClick = { /* item dipanggil di sini tapi tidak digunakan */ }
+                            onClick = {}
                         )
                         Text(text = item)
                     }
@@ -80,6 +80,15 @@ fun FormIsian(
                 label = { Text("Alamat") },
                 modifier = Modifier.width(250.dp)
             )
+
+            Button(
+                onClick = OnSubmitBtnClick,
+                modifier = Modifier
+                    .padding(top = 16.dp)
+                    .width(250.dp)
+            ) {
+                Text(text = stringResource(id = R.string.submit))
+            }
         }
     }
 }
