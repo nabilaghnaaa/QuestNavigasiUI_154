@@ -46,12 +46,12 @@ fun FormIsian( // Membuat fungsi composable bernama FormIsian
                     .width(250.dp) // Lebar text field 250dp
             )
 
-            HorizontalDivider(
+            HorizontalDivider( // Garis horizontal pemisah
                 modifier = Modifier
-                    .padding(20.dp)
-                    .width(250.dp),
-                thickness = 1.dp,
-                color = Color.Red
+                    .padding(20.dp) // Memberikan jarak dari sekitar garis
+                    .width(250.dp), // Lebar garis 250dp
+                thickness = 1.dp, // Ketebalan garis 1dp
+                color = Color.Red // Warna garis merah
             )
 
             Row {
