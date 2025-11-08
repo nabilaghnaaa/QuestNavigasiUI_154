@@ -1,4 +1,5 @@
-package com.example.Navigation.view // Mendefinisikan package tempat file ini berada
+package com.example.navigation.view
+// Mendefinisikan package tempat file ini berada
 
 import androidx.compose.foundation.layout.* // Import untuk layout seperti Column, Row, padding, dll
 import androidx.compose.material3.* // Import untuk komponen Material 3 (Button, TextField, dsb)
